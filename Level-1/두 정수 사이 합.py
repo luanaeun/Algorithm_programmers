@@ -1,13 +1,16 @@
-# min, max 활용
+# 리스트 활용
 # def solution(a, b):
 #     result = sum([i for i in range(min(a,b), max(a,b)+1)])
 #     return result
 
 
 def solution(a, b):
-    a = range(a, b+1)
-    print(a)
-    #result = sum(range(min(a,b), max(a,b)+1))
-    #return result
+ 
+    result = sum(range(min(a,b), max(a,b)+1))
+    return result
 
 print(solution(3, 3))
+
+
+# a,b 동시에 바꾸려면?
+#a, b = b, a
