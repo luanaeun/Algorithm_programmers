@@ -3,8 +3,8 @@ def solution(n, arr1, arr2):
     #최종 지도 리스트 
     result = []
 
-    #공통 함수 생성
-    def arr_2(nn, arr):
+    #2진수로 바꾸는 함수 생성
+    def arrTo_2(nn, arr):
         List = []
 
         for j in arr:
@@ -24,18 +24,18 @@ def solution(n, arr1, arr2):
         return List
 
     #함수 실행
-    aList = arr_2(n, arr1)
-    bList = arr_2(n, arr2)
+    aList = arrTo_2(n, arr1)
+    bList = arrTo_2(n, arr2)
 
-    #두 개 공통점 확인하여 리스트 생성
+    #두 개 공통점 확인하여 결과 생성
     for i in range(n):
-        test_result = ''
+        temp_result = ''
         for j in range(n):
             if aList[i][j] == 0 and bList[i][j] == 0:
-                test_result += ' '
+                temp_result += ' '
             else:
-                test_result += '#'
-        result.append(test_result)
+                temp_result += '#'
+        result.append(temp_result)
 
 
     return result
