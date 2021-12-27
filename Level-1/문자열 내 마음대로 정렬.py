@@ -13,8 +13,8 @@ def solution(s, n):
     result = list(set(result))
     return result
 
-# def solution(strings, n):
-#     return sorted(strings, key=lambda x: x[n])
+def solution(strings, n):
+    return sorted(strings, key=lambda x: x[n])
 
 
 print(solution(["sun", "bed", "car"], 1))
