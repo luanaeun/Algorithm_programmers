@@ -7,3 +7,4 @@ def solution(x, n):
     return answer
 
 print(solution(2, 5))
+
