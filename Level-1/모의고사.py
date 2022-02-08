@@ -8,9 +8,6 @@ def solution(answer):
         count = 0
         total = 0
         for i in answer:
-            # print("정답:", i)
-            # print("규칙: ", rules[r][count])
-            
             if i == rules[r][count]:
                 total += 1
 
@@ -19,21 +16,18 @@ def solution(answer):
 
             count += 1
         
-        
         if total >= max_n:
             if total > max_n:
                 result = []
             max_n = total
             result.append(r+1)
 
-
     return result
 
-#print(solution([3, 3, 2, 1, 5]))
 
+#print(solution([3, 3, 2, 1, 5]))
 print(solution([1, 2, 3, 4, 5]))
 # print(solution([1,3,2,4,2]))
-# print(solution([0,0,0,0,0]))
 
 # 1번 테케
 print(solution([1, 1, 1, 1]))
